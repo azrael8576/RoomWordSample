@@ -41,6 +41,10 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             wordViewHolder.wordItemView.setText("No Word");
         }
     }
+    void setWords(List<Word> words) {
+        mWords = words;
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getItemCount() {

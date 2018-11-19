@@ -10,10 +10,10 @@ import java.util.List;
 public class WordViewModel extends AndroidViewModel {
     private WordRepository mRepository;
     private LiveData<List<Word>> mAllWords;
-    public WordViewModel(@NonNull Application application) {
+    public WordViewModel (Application application) {
         super(application);
         mRepository = new WordRepository(application);
-        mAllWords = mRepository.getmAllWords();
+        mAllWords = mRepository.getAllWords();
     }
     public LiveData<List<Word>> getAllWords() {
         return mAllWords;
