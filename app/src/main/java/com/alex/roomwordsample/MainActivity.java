@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mWordViewModel = ViewModelProviders.of(this).get(WordViewModel.class);
-        mWordViewModel.getAllWords().observe(this, new Observer<List<Word>>() {
-            @Override
-            public void onChanged(@Nullable List<Word> words) {
-
-            }
-        });
+//        mWordViewModel = ViewModelProviders.of(this).get(WordViewModel.class);
+//        mWordViewModel.getAllWords().observe(this, new Observer<List<Word>>() {
+//            @Override
+//            public void onChanged(@Nullable List<Word> words) {
+//
+//            }
+//        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
