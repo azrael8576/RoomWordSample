@@ -1,4 +1,5 @@
 # RoomWordSample
-init
 
 MVVM + Architecture Components
+
+Practice
